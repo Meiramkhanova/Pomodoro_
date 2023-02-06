@@ -18,7 +18,9 @@ def error_403(request, exception):
 
 def pageNotFound(request, exception):
     # your custom error handling logic for Not Found (404) error
-    return HttpResponseNotFound('<h1>Page Not Found</h1>')
+    #return HttpResponseNotFound('<h1>Page Not Found</h1>')
+    return render(request, '404.html', status=404)
+
 
 
 def error_500(request):
