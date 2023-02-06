@@ -9,3 +9,5 @@ handler500 = 'pomodorotech.views.error_500'
 urlpatterns = [
     path('', include('pomodorotech.urls')),
 ]
+
+handler404= 'pomodorotech.views.pageNotFound'
