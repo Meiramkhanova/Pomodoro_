@@ -11,3 +11,9 @@ urlpatterns = [
 ]
 
 handler404= 'pomodorotech.views.pageNotFound'
+
+handler403 = 'pomodorotech.views.error_403'
+
+handler400='pomodorotech.views.error_400'
+
+handler500='pomodorotech.views.error_500'
