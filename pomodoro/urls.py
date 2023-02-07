@@ -1,5 +1,4 @@
 from django.urls import include, path
-from pomodorotech import views
 
 handler400 = 'pomodorotech.views.error_400'
 handler403 = 'pomodorotech.views.error_403'

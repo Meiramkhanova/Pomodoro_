@@ -26,3 +26,8 @@ def pageNotFound(request, exception):
 def error_500(request):
     # your custom error handling logic for Internal Server Error (500) error
     return render(request, '500.html', status=500)
+
+def check(request, exception):
+    pass
+
+
