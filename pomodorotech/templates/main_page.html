@@ -1,10 +1,19 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title>{{title}}</title>
+  <link type="text/css" href="{% static '/css/styles.css' % " rel="stylesheet"/>
 </head>
 <body>
-<h1>Hi!</h1>
+  <div class="timer">
+    <div class="time-left">25:00</div>
+    <div class="timer-buttons">
+      <button id="start-btn">Start</button>
+      <button id="pause-btn">Pause</button>
+      <button id="reset-btn">Reset</button>
+    </div>
+  </div>
 </body>
 </html>

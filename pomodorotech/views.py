@@ -3,9 +3,10 @@ from django.shortcuts import render
 
 
 def main_page(request):
-    return render(request, 'main_page.html')
+    return render(request, 'main_page.html',{'title': 'The main page'})
 
-
+def about(request):
+    return render(request, 'about.html',{'title': 'About page'})
 def error_400(request, exception):
     # your custom error handling logic for Bad Request (400) error
     return render(request, '400.html', status=400)
